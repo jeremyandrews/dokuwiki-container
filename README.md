@@ -14,6 +14,11 @@ the following commands:
 Then visit the following URL to configure the wiki:
 	http://localhost:8080/install.php
 
+To ssh into the container, use the following command:
+```
+	docker exec -it dokuwiki ash
+```
+
 ## DokuWiki
 
 For full details, visit https://www.dokuwiki.org/dokuwiki
@@ -47,6 +52,4 @@ Dockerfile, again changing `8080` to your new port.
 
 ## TODO
  - install/enable some plugins
- - properly write wiki files to a permanent volume so reinstallation doesn't
-   lose the wiki.
  - configure email
