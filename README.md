@@ -1,7 +1,6 @@
 # A simple DokuWiki container
 
-The goal of this is to provide a simple starting point for hosting DokuWiki
-in a container. 
+A simple starting point for hosting DokuWiki in a container. 
 
 ## Installation
 
@@ -27,8 +26,8 @@ For full details, visit https://www.dokuwiki.org/dokuwiki
 
 ## Customizations
 
-We start with the Alpine distribution, installing lighttpd and all PHP
-requirements for DokuWiki.
+The base container starts with the Alpine distribution, adding lighttpd and
+all PHP requirements along with DokuWiki.
 
 ### DokuWiki version
 
