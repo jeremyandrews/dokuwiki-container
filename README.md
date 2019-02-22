@@ -35,15 +35,15 @@ requirements for DokuWiki.
 Edit the DOKUWIKI_INSTALL variable at the top of Dockerfile to install a
 different version of DokuWiki.
 
-### PHP extensions
+### Extensions
 
-You can comment out the line in Dockerfile that installs php7-curl and
-php7-openssl if you do not want to install extensions through the DokuWiki
-administrative Extension Manager.
+You can comment out the line in Dockerfile that installs `php7-curl` and
+`php7-openssl` if you do not want to install extensions through the DokuWiki
+administrative Extension Manager. Extensions can still be installed manually.
 
 ### Listening port (default: 8080)
 
-To change which port lighttpd listens on, edit lighttpd/lighttpd.conf changing:
+To change which port lighttpd listens on, edit `lighttpd/lighttpd.conf` changing:
 ```
 	server.port          = 8080
 ```
