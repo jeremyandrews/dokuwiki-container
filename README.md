@@ -11,6 +11,9 @@ the following commands:
 	docker-compose build && docker-compose up
 ```
 
+Then visit the following URL to configure the wiki:
+	http://localhost:8080/install.php
+
 ## DokuWiki
 
 For full details, visit https://www.dokuwiki.org/dokuwiki
@@ -46,3 +49,4 @@ Dockerfile, again changing `8080` to your new port.
  - install/enable some plugins
  - properly write wiki files to a permanent volume so reinstallation doesn't
    lose the wiki.
+ - configure email
