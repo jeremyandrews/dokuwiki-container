@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+ dokuwiki:
+   container_name: dokuwiki
+   build:
+     context: .
+     dockerfile: Dockerfile
+   ports:
+    - "8080:8080"
+   volumes:
+    - "dokuwiki_data:/dokuwiki"
+
+volumes:
+  dokuwiki_data:
+    driver: local
