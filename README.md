@@ -46,7 +46,7 @@ To change which port lighttpd listens on, edit `lighttpd/lighttpd.conf` changing
 ```
 	server.port          = 8080
 ```
-from `8080` to your desired port. Then, also edit the EXPOSE toward the end of
+from `8080` to your desired port. Then, also edit the `EXPOSE` toward the end of
 Dockerfile, again changing `8080` to your new port.
 
 ## TODO
