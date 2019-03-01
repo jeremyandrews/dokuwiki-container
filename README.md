@@ -26,25 +26,26 @@ For full details, visit https://www.dokuwiki.org/dokuwiki
 
 ## Customizations
 
-The base container starts with the Alpine distribution, adding lighttpd and
-all PHP requirements along with DokuWiki.
+The base container starts with the Ubuntu distribution, adding nginx and all PHP
+requirements along with DokuWiki.
 
 ### DokuWiki version
 
-Edit the DOKUWIKI_INSTALL variable at the top of Dockerfile to install a
+Edit the `DOKUWIKI_INSTALL` variable at the top of Dockerfile to install a
 different version of DokuWiki.
 
 ### Extensions
 
-You can comment out the line in Dockerfile that installs `php7-curl` and
-`php7-openssl` if you do not want to install extensions through the DokuWiki
-administrative Extension Manager. Extensions can still be installed manually.
+You can comment out the line in Dockerfile that installs `php-curl` if you do not
+want to install extensions through the DokuWiki administrative Extension Manager.
+Extensions can still be installed manually.
 
 ### Listening port (default: 8080)
 
-To change which port lighttpd listens on, edit `lighttpd/lighttpd.conf` changing:
+To change which port nginx listens on, edit `nginx/default` changing:
 ```
-	server.port          = 8080
+	listen 8080 default_server;
+	listen [::]:8080 default_server;
 ```
 from `8080` to your desired port. Then, also edit the `EXPOSE` toward the end of
 Dockerfile, again changing `8080` to your new port.

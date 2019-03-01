@@ -9,7 +9,7 @@ services:
    ports:
     - "8080:8080"
    volumes:
-    - "dokuwiki_data:/usr/share/dokuwiki"
+    - "dokuwiki_data:/opt/dokuwiki"
 
 volumes:
   dokuwiki_data:
